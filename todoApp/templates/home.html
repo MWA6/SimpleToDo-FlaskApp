@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="">
+    <input type="text" name="note" placeholder="Enter a note">
+    <button>Add Notes</button>
+</form>
+
+<ul>
+{% for note in notes %}
+    <li>{{ note }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
